@@ -15,24 +15,20 @@ public class TitleVerification2 {
         
         WebDriver driver=BrowserFactory.getDriver("chrome");
         driver.get("https://lulugandgeorgia.com");
-        String actualtitle1=driver.getTitle();
-        String expectedtitle1=driver.getTitle();
-        StringUtility.verifyEquals(actualtitle1,expectedtitle1);
+        String title1=driver.getTitle();
+        StringUtility.verifyEquals(title1,driver.getTitle());
         Thread.sleep(500);
         driver.navigate().to("https://wayfair.com/");
-        String actualtitle2=driver.getTitle();
-        String expectedtitle2=driver.getTitle();
-        StringUtility.verifyEquals(actualtitle2,expectedtitle2);
+        String title2=driver.getTitle();
+        StringUtility.verifyEquals(title2,driver.getTitle());
         Thread.sleep(500);
         driver.navigate().to("https://walmart.com");
-        String actualtitle3=driver.getTitle();
-        String expectedtitle3=driver.getTitle();
-        StringUtility.verifyEquals(actualtitle3,expectedtitle3);
+        String title3=driver.getTitle();
+        StringUtility.verifyEquals(title3,driver.getTitle());
         Thread.sleep(500);
         driver.navigate().to("https://westelm.com/");
-        String actualtitle4=driver.getTitle();
-        String expectedtitle4=driver.getTitle();
-        StringUtility.verifyEquals(actualtitle4,expectedtitle4);
+        String title4=driver.getTitle();
+        StringUtility.verifyEquals(title4,driver.getTitle());
         driver.quit();
 
 

@@ -15,51 +15,20 @@ public class TitleVerification3 {
 
         WebDriver driver= BrowserFactory.getDriver("chrome");
         driver.get("https://lulugandgeorgia.com");
-        String Actualtitle1=driver.getTitle();
-        String expectedTitle1=driver.getTitle();
-        StringUtility.verifyEquals(Actualtitle1,expectedTitle1);
+        String title1=driver.getTitle();
+        StringUtility.verifyEquals(title1,driver.getTitle());
         driver.quit();
         driver.get("https://wayfair.com/");
-        String ActualTitle2=driver.getTitle();
-        String expectedTitle2=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle2,expectedTitle2);
+        String title2=driver.getTitle();
+        StringUtility.verifyEquals(title2,driver.getTitle());
         driver.quit();
         driver.get("https://walmart.com");
-        String ActualTitle3=driver.getTitle();
-        String expectedTitle3=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle3,expectedTitle3);
+        String title3=driver.getTitle();
+        StringUtility.verifyEquals(title3,driver.getTitle());
         driver.quit();
         driver.get("https://westelm.com/");
-        String ActualTitle4=driver.getTitle();
-        String expectedTitle4=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle4,expectedTitle4);
+        String title4=driver.getTitle();
+        StringUtility.verifyEquals(title4,driver.getTitle());
         driver.quit();
     }
 }
-/*
-WebDriver driver=BrowserFactory.getDriver("chrome");
-        driver.navigate().to("https://lulugandgeorgia.com");
-        String Actualtitle1=driver.getTitle();
-        String expectedTitle1=driver.getTitle();
-        StringUtility.verifyEquals(Actualtitle1,expectedTitle1);
-        driver.close();
-      //  Thread.sleep(500);
-
-        driver.navigate.to("https://wayfair.com/");
-        String ActualTitle2=driver.getTitle();
-        String expectedTitle2=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle2,expectedTitle2);
-        driver.close();
-      //  Thread.sleep(500);
-        chromeDriver.get("https://walmart.com");
-        String ActualTitle3=driver.getTitle();
-        String expectedTitle3=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle3,expectedTitle3);
-        driver.close();
-     //   Thread.sleep(500);
-       driver.navigate.to("https://westelm.com/");
-        String ActualTitle4=driver.getTitle();
-        String expectedTitle4=driver.getTitle();
-        StringUtility.verifyEquals(ActualTitle4,expectedTitle4);
-        driver.close();
- */
