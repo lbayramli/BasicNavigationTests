@@ -17,15 +17,17 @@ public class TitleVerification {
         WebDriver driver = BrowserFactory.getDriver("chrome");
         driver.navigate().to("http://practice.cybertekschool.com/");
         String title1 = driver.getTitle();
-        StringUtility.verifyEquals(title1, driver.getTitle());
+        String currentUrl=driver.getCurrentUrl();
         Thread.sleep(500);
         driver.navigate().to("http://practice.cybertekschool.com/dropdown");
         String title2 = driver.getTitle();
-        StringUtility.verifyEquals(title2, driver.getTitle());
+        String currentUrl2=driver.getCurrentUrl();
         Thread.sleep(500);
         driver.navigate().to("http://practice.cybertekschool.com/login");
         String title3 = driver.getTitle();
-        StringUtility.verifyEquals(title3, driver.getTitle());
+        String currentUrl3=driver.getCurrentUrl();
+        StringUtility.verifyEquals(title1, title2);
+        StringUtility.verifyEquals(title1,title3);
         Thread.sleep(500);
 
 
